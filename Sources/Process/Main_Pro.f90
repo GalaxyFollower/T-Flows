@@ -195,7 +195,6 @@
     end if
 
     If(turbulence_model .eq. HYBRID_LES_RANS) then
-      call Calculate_Shear_And_Vorticity(flow)
       call Calculate_Sgs_Dynamic(flow,sol)
       call Calculate_Sgs_Hybrid(grid)
     end if
